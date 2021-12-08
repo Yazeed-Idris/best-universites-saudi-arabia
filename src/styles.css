@@ -6,6 +6,43 @@ body {
     align-items: center;
 }
 
+.header {
+    width: 100%;
+}
+
+h1, h2 {
+    color: #cc9838;
+}
+
+.header ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0c1434;
+}
+.header li {
+    float: left;
+}
+.header li a {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #0c1434;
+}
+.header li a:hover {
+    background-color: #2c3c5c;
+}
+.header .active:hover {
+    background-color: #ffd875;
+}
+.header .active {
+    background-color: #e9b657;
+}
+
 .img-container img {
     width: 500px;
     height: 500px;
@@ -25,12 +62,21 @@ body {
 .card div {
     display: inline-block;
 }
-.card div:last-child img, .card div:last-child h4 {
+.card div:nth-child(2) img, .card div:nth-child(2) h4 {
     display: inline-block;
 }
 
 .card div:first-child img {
     margin-left: 20px;
+}
+
+table {
+    display: inline-block;
+}
+
+td, th {
+    padding: 0 5px;
+    text-align: center;
 }
 
 .card:hover {
@@ -39,6 +85,11 @@ body {
 
 .container {
     padding: 2px 16px;
+}
+
+.acceptance-score {
+    display: flex;
+    flex-direction: column;
 }
 
 ol {
@@ -127,7 +178,7 @@ a, a:visited {
     max-width: 1000px;
 }
 
-/* KAUST Styling */
+/* KAUST Styles */
 .kaust ul {
     width: 100%;
     list-style-type: none;
@@ -170,4 +221,56 @@ a, a:visited {
 
 .kaust h2 {
     margin-bottom: 7px;
+}
+
+/* imam styles */
+.imam ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0c1434;
+}
+.imam li {
+    float: left;
+}
+.imam li a {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #0c1434;
+}
+.imam li a:hover {
+    background-color: #2c3c5c;
+}
+.imam .active:hover {
+    background-color: #ffd875;
+}
+.imam .active {
+    background-color: #e9b657;
+}
+.imam h1 {
+    color: #e9b657;
+}
+
+.imam h4, .imam h2, .imam h3 {
+    max-width: 1000px;
+}
+
+.imam .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.imam h2 {
+    margin-bottom: 7px;
+}
+
+.imam h4 {
+    margin-top: 10px;
+    margin-bottom: 0;
 }
