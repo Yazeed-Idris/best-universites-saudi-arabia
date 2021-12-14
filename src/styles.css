@@ -6,12 +6,25 @@ body {
     align-items: center;
 }
 
-.header {
+header {
     width: 100%;
+}
+
+footer {
+    margin-bottom: 15px;
+    text-decoration: underline;
 }
 
 h1, h2 {
     color: #cc9838;
+}
+
+ol {
+    padding-inline-start: 0;
+}
+
+#acceptanceGpa {
+    margin-bottom: 20px;
 }
 
 .header ul {
@@ -178,6 +191,16 @@ a, a:visited {
     max-width: 1000px;
 }
 
+.kfupm h4, .kfupm h2, .kfupm h3 {
+    max-width: 1000px;
+}
+
+.kfupm .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
 /* KAUST Styles */
 .kaust ul {
     width: 100%;
@@ -225,7 +248,6 @@ a, a:visited {
 
 /* imam styles */
 .imam ul {
-    width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;

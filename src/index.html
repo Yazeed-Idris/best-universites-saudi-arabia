@@ -7,107 +7,110 @@
 </head>
 <body>
 
-<div class="header">
+<header class="header">
     <ul style="width: 100%">
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="imam.html">IAU</a></li>
         <li><a href="kfupm.html">KFUPM</a></li>
         <li><a href="kau.html">KAU</a></li>
         <li><a href="kaust.html">KAUST</a></li>
+        <li><a href="#acceptanceGpa">Calculate Acceptance GPA</a></li>
     </ul>
-</div>
+</header>
 
-<div class="top-heading">
-    <h1>
-        Don't know what university to choose?
-        <br>We got you covered
-    </h1>
-</div>
-<h2 class="secondary-heading">These are the best rated universities in Saudi Arabia</h2>
-<ol>
-    <li>
-        <a href="imam.html">
-            <div class="card">
-                <div>
-                    <img src="images/imam.jfif" height="75" width="75" alt="University logo">
+<main>
+    <div class="top-heading">
+        <h1>
+            Don't know what university to choose?
+            <br>We got you covered
+        </h1>
+    </div>
+    <h2 class="secondary-heading">These are the best rated universities in Saudi Arabia</h2>
+    <ol>
+        <li>
+            <a href="imam.html">
+                <div class="card">
+                    <div>
+                        <img src="images/imam.jfif" height="75" width="75" alt="University logo">
+                    </div>
+                    <div class="container">
+                        <h3>Imam Abdulrahman Bin Fiasal Univeristy</h3>
+                        <img src="images/pin-icon.png" height="18" style="display: inline;" alt="location pin icon">
+                        <h4>Dammam</h4>
+                    </div>
                 </div>
-                <div class="container">
-                    <h3>Imam Abdulrahman Bin Fiasal Univeristy</h3>
-                    <img src="images/pin-icon.png" height="18" style="display: inline;" alt="location pin icon">
-                    <h4>Dammam</h4>
+            </a>
+        </li>
+        <li>
+            <a href="kfupm.html">
+                <div class="card">
+                    <div>
+                        <img src="images/kfupm.jpg" height="75" width="75" alt="University logo">
+                    </div>
+                    <div class="container">
+                        <h3>King Fahd University of Petroleum and Minerals (KFUPM)</h3>
+                        <img src="images/pin-icon.png" height="18" style="display: inline;" alt="location pin icon">
+                        <h4>Dhahran</h4>
+                    </div>
                 </div>
-            </div>
-        </a>
-    </li>
-    <li>
-        <a href="kfupm.html">
-            <div class="card">
-                <div>
-                    <img src="images/kfupm.jpg" height="75" width="75" alt="University logo">
+            </a>
+        </li>
+        <li>
+            <a href="kau.html">
+                <div class="card">
+                    <div>
+                        <img src="images/kau.jpg" height="75" width="75" alt="University logo">
+                    </div>
+                    <div class="container">
+                        <h3>King Abdulaziz University</h3>
+                        <img src="images/pin-icon.png" height="18" style="display: inline;" alt="location pin icon">
+                        <h4>Jeddah</h4>
+                    </div>
                 </div>
-                <div class="container">
-                    <h3>King Fahd University of Petroleum and Minerals (KFUPM)</h3>
-                    <img src="images/pin-icon.png" height="18" style="display: inline;" alt="location pin icon">
-                    <h4>Dhahran</h4>
+            </a>
+        </li>
+        <li>
+            <a href="kaust.html">
+                <div class="card">
+                    <div>
+                        <img src="images/kaust.png" height="75" width="75" alt="University logo">
+                    </div>
+                    <div class="container">
+                        <h3>King Abdullah University of Science and Technology</h3>
+                        <img src="images/pin-icon.png" height="18" style="display: inline;" alt="location pin icon">
+                        <h4>Thuwal</h4>
+                    </div>
                 </div>
-            </div>
-        </a>
-    </li>
-    <li>
-        <a href="kau.html">
-            <div class="card">
-                <div>
-                    <img src="images/kau.jpg" height="75" width="75" alt="University logo">
-                </div>
-                <div class="container">
-                    <h3>King Abdulaziz University</h3>
-                    <img src="images/pin-icon.png" height="18" style="display: inline;" alt="location pin icon">
-                    <h4>Jeddah</h4>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li>
-        <a href="kaust.html">
-            <div class="card">
-                <div>
-                    <img src="images/kaust.png" height="75" width="75" alt="University logo">
-                </div>
-                <div class="container">
-                    <h3>King Abdullah University of Science and Technology</h3>
-                    <img src="images/pin-icon.png" height="18" style="display: inline;" alt="location pin icon">
-                    <h4>Thuwal</h4>
-                </div>
-            </div>
-        </a>
-    </li>
-</ol>
-<hr style="border-top: 1px solid black; width: 60%"/>
-<h2>Calculate acceptance score:</h2>
-<div>
-    <select id="universityOption" onchange="changeScores()">
-        <option value="imam">Imam university</option>
-        <option value="kfupm">KFUPM university</option>
-        <option value="kau">KAU university</option>
-        <option value="kaust">KAUST university</option>
-    </select>
-    <table>
-        <tr>
-            <th>acceptance score</th>
-            <th>your score</th>
-        </tr>
-        <tr>
-            <td id="acceptanceScore">0</td>
-            <td id="calculatedScore">0</td>
-        </tr>
-    </table>
-    <br>
-    <br>
-    <input type="text" placeholder="high school gpa" id="highSchoolGpa">
-    <input type="text" placeholder="Aptitude test" id="aptitudeTest">
-    <input type="text" placeholder="achievement test" id="achievementTest">
-    <button onclick="calculateScore()">Calculate</button>
-</div>
+            </a>
+        </li>
+    </ol>
+    <hr style="border-top: 1px solid black; margin: 25px 0"/>
+    <h2>Calculate acceptance score:</h2>
+    <div id="acceptanceGpa">
+        <select id="universityOption" onchange="changeScores()">
+            <option value="imam">Imam university</option>
+            <option value="kfupm">KFUPM university</option>
+            <option value="kau">KAU university</option>
+            <option value="kaust">KAUST university</option>
+        </select>
+        <table>
+            <tr>
+                <th>acceptance score</th>
+                <th>your score</th>
+            </tr>
+            <tr>
+                <td id="acceptanceScore">0</td>
+                <td id="calculatedScore">0</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <input type="text" placeholder="high school gpa" id="highSchoolGpa">
+        <input type="text" placeholder="Aptitude test" id="aptitudeTest">
+        <input type="text" placeholder="achievement test" id="achievementTest">
+        <button onclick="calculateScore()">Calculate</button>
+    </div>
+</main>
 
 <script rel="script" src="main.js"></script>
 </body>
